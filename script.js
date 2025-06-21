@@ -14,7 +14,7 @@ function makeMove(index) {
       document.getElementById('status').textContent = "It's a draw!";
       gameOver = true;
     } else {
-      currentPlayer = currentPlayer === 'X' ? 'Y' : 'X';
+      currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
       document.getElementById('status').textContent = `Player ${currentPlayer}'s turn`;
     }
   }
