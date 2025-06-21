@@ -2,60 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Akshitha</title>
+  <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>Tic Tac Toe</h1>
+  <div class="board" id="board">
+    <div class="cell" onclick="makeMove(0)"></div>
+    <div class="cell" onclick="makeMove(1)"></div>
+    <div class="cell" onclick="makeMove(2)"></div>
+    <div class="cell" onclick="makeMove(3)"></div>
+    <div class="cell" onclick="makeMove(4)"></div>
+    <div class="cell" onclick="makeMove(5)"></div>
+    <div class="cell" onclick="makeMove(6)"></div>
+    <div class="cell" onclick="makeMove(7)"></div>
+    <div class="cell" onclick="makeMove(8)"></div>
+  </div>
+  <p id="status">Player X's turn</p>
+  <button onclick="resetGame()">Restart</button>
 
-  <header>
-    <h1>Welcome to My Page</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="https://via.placeholder.com/150" alt="Profile Picture">
-      <p>Hello! I'm Akshitha, a web development intern learning HTML, CSS, and JavaScript. I'm passionate about building simple, clean websites and improving my skills every day.</p>
-    </section>
-
-    <section id="skills">
-      <h2>My Skills</h2>
-      <div class="skills-grid">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">C</div>
-        <div class="skill">Python</div>
-        <div class="skill">DSA</div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label>Name:</label>
-        <input type="text" placeholder="Your name" required>
-
-        <label>Email:</label>
-        <input type="email" placeholder="Your email" required>
-
-        <label>Message:</label>
-        <textarea placeholder="Your message"></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Akshitha Bingi</p>
-  </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
